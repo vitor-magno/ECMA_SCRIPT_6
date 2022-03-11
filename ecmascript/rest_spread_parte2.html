@@ -1,0 +1,32 @@
+<html>
+    <body>
+        <div id="teste"></div>
+        <script>
+
+            //context rest -> utilizado para condensar
+
+            function soma(...p){
+                let resultado = 0
+                //element é a variavel
+                p.forEach(element => {
+                    console.log(p)
+                    resultado = resultado + element
+                    
+                });
+
+                console.log(p)
+
+                return resultado
+            }
+            
+            let x = soma(5, 7, 49, 12, 56)
+            console.log(x)
+
+            function multiplicacao(m, ...n){
+                console.log(m)
+                console.log(n)
+            }
+                multiplicacao(5, 7, 12, 13, 49)
+        </script>
+    </body>
+</html>

@@ -1,0 +1,34 @@
+<html>
+    <body>
+        <script>
+
+        //Quando uma variável é declara com VAR dentro de um escopo de bloco, que seria as condições e LOOP 
+        //e esteja fora de um escopo de função ela sofre uma elevação para o escopo global.
+        //Mas se for declarado dentro de um escopo de bloco e dentro de um escopo de função, ela só se eleva
+        //ao escopo de função
+
+        //escopos: global, função, bloco
+
+            function escopoFuncao() {
+                
+                if(true) {
+                    if(true) {
+                        var serie = 'Game of Thrones'
+                    }
+                }
+
+                console.log('funcao: ', serie)
+                
+            }
+
+            escopoFuncao()
+
+            console.log('global: ', serie)
+
+            {
+                console.log('global: ', serie)
+            }
+
+        </script>
+    </body>
+</html>

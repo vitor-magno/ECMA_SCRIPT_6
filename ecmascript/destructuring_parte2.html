@@ -1,0 +1,34 @@
+<html>
+    <body>
+        <div id="teste"></div>
+        <script>
+
+            //destructuring no contexto de obejto
+            let produto = {
+                descricao: 'Notebook',
+                price: 2500,
+                detalhes: {
+                    fabricante: 'DELL',
+                    modelo: 'Acer'
+                }
+            }
+
+            // let {descricao, price} = produto
+            // console.log(descricao, price)
+
+            // nomenando as variaveis com outros nomes
+            // let {descricao: d, price: p} = produto
+            // console.log(d, p)
+
+            // valor padrão quando undefined 
+            // let {descricao: d, price: p, desconto: de = 5} = produto
+            // console.log(d, p, de)
+
+            //extrari atriubuito pertencete ao objeto 'detalhes'
+
+            // let { descricao, detalhes: {fabricante, modelo}} = produto
+            // console.log(fabricante)
+        </script>
+        </script>
+    </body>
+</html>
